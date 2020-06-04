@@ -11,14 +11,13 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SalesTax" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SalesTAX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0v-kz-ggS">
-                                <rect key="frame" x="101" y="144" width="212.5" height="54"/>
+                                <rect key="frame" x="101" y="64" width="212.5" height="54"/>
                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +49,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQe-zX-kok">
-                                <rect key="frame" x="166" y="698" width="82" height="36"/>
+                                <rect key="frame" x="166" y="776" width="82" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Calculate"/>
                                 <connections>
@@ -58,7 +57,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$30.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VD3-yl-Pmf">
-                                <rect key="frame" x="162.5" y="318" width="89.5" height="30"/>
+                                <rect key="frame" x="162.5" y="358" width="89.5" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -67,11 +66,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VD3-yl-Pmf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4T7-GZ-R86"/>
-                            <constraint firstItem="NtV-T5-KV9" firstAttribute="top" secondItem="K0v-kz-ggS" secondAttribute="bottom" constant="200" id="N7y-Og-vaB"/>
-                            <constraint firstItem="NtV-T5-KV9" firstAttribute="top" secondItem="VD3-yl-Pmf" secondAttribute="bottom" constant="50" id="OYw-Qq-Pzx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="K0v-kz-ggS" secondAttribute="top" constant="-20" id="N7y-Og-vaB"/>
+                            <constraint firstItem="NtV-T5-KV9" firstAttribute="top" secondItem="VD3-yl-Pmf" secondAttribute="bottom" constant="10" id="OYw-Qq-Pzx"/>
                             <constraint firstItem="NtV-T5-KV9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SvR-g6-D8e"/>
                             <constraint firstItem="NtV-T5-KV9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="V8Y-bF-eOK"/>
-                            <constraint firstItem="CQe-zX-kok" firstAttribute="top" secondItem="NtV-T5-KV9" secondAttribute="bottom" constant="200" id="Ysj-St-IO1"/>
+                            <constraint firstItem="CQe-zX-kok" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="Ysj-St-IO1"/>
                             <constraint firstItem="CQe-zX-kok" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="klX-c9-bGT"/>
                             <constraint firstItem="K0v-kz-ggS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wH7-nR-fK3"/>
                         </constraints>
@@ -83,6 +82,7 @@
                         <outlet property="tax" destination="ktw-cs-d0f" id="0JT-ex-L5s"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
         </scene>
